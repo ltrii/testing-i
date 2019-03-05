@@ -5,9 +5,6 @@ module.exports = {
   };
   
   function success(item) {
-    // if(!item.name || !item.type || !item.durability || !item.enhancement) {
-    //         throw new Error('Not a valid Item Object.');
-    //     }
     if(item.enhancement <= 14 && item.durability <= 25) return item;
     if(item.enhancement <= 14 && item.durability <= 10) return item;
     
